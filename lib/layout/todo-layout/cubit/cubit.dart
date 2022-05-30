@@ -5,9 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:todo_app/layout/todo-layout/cubit/states.dart';
 
-import '../../../modules/todo_app/TodoAPP/archive.dart';
-import '../../../modules/todo_app/TodoAPP/done.dart';
-import '../../../modules/todo_app/TodoAPP/tasks.dart';
+import '../../../modules/todo_app/archive.dart';
+import '../../../modules/todo_app/done.dart';
+import '../../../modules/todo_app/tasks.dart';
 
 
 class AppCubit extends Cubit<CubitStates>{

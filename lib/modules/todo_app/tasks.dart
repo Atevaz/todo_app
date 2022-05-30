@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../layout/todo-layout/cubit/cubit.dart';
-import '../../../layout/todo-layout/cubit/states.dart';
-import '../../../shared/componants/componant.dart';
+import '../../layout/todo-layout/cubit/cubit.dart';
+import '../../layout/todo-layout/cubit/states.dart';
+import '../../shared/componants/componant.dart';
 
-class done extends StatelessWidget {
+class task extends StatelessWidget {
 
 
   @override
@@ -13,7 +13,8 @@ class done extends StatelessWidget {
     return BlocConsumer<AppCubit,CubitStates>(
       listener: (context,state){},
       builder: (context,state){
-        var tasks = AppCubit.get(context).doneTasks;
+
+        var tasks = AppCubit.get(context).newTasks;
         return taskBuilder(tasks: tasks);
       },
     );
